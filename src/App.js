@@ -6,7 +6,7 @@ import ChatPopUp from './components/ChatPopUp/ChatPopUp';
 
 function App() {
 
-  const ws = new WebSocket("ws://sh-chat-app-server-8xd5j.ondigitalocean.app/");
+  const ws = new WebSocket("wss://sh-chat-app-server-8xd5j.ondigitalocean.app/");
 
   const formField = React.useRef(null)
   const messagesEndRef = React.useRef(null)
