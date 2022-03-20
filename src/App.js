@@ -25,14 +25,16 @@ function App() {
     // textNode.innerHTML = message;
     // this.pageForm.controls['messageBox'].setValue('');
     ws.send(formField?.current?.getFieldValue('message'));
-    formField?.current.setFields([{
-      name: 'message',
-      value: ''
-    }])
+
+    let cose = [{ name: 'message', value: '' }];
+    doThings(cose);
     console.log(`We sent a message to the server ${formField?.current?.getFieldValue('message')}`)
 
   }
+  const doThings = (cose) => {
+    return formField?.current?.setFields(cose)
 
+  }
   const scrollToBottom = () => {
     messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
   }
