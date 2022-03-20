@@ -16,13 +16,23 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  display: flex;
+  flex-direction: column;
 }
+
+.popups {
+
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 80vh;
+  justify-content: end;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+
+.inputBox {}
 
 .App-link {
   color: #61dafb;
@@ -32,6 +42,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
