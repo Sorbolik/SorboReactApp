@@ -5,8 +5,8 @@ import './App.css';
 import ChatPopUp from './components/ChatPopUp/ChatPopUp';
 
 function App() {
-
-  const ws = new WebSocket("wss://localhost:8082/");
+  
+  const ws = new WebSocket("wss://146.190.231.201/");
 
   const formField = React.useRef(null)
   const messagesEndRef = React.useRef(null)
